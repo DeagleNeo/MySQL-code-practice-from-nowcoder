@@ -24,7 +24,7 @@
 
 #####  2. Mysql version < 8.x
 
-###    Approach 1.
+###    Approach 1. Use join
 
 # SELECT
 # (SELECT SUM(two_days_count)
@@ -59,7 +59,8 @@
 # ) AS avg_ret;
 
 
-###    Approach 2.
+###    Approach 2. Use user-defined variables
+    
 SELECT
     (SELECT SUM(two_day_count)
     FROM
